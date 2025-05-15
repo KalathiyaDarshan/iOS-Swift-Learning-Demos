@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageClvCell" id="gTV-IL-0wX" customClass="ImageClvCell" customModule="CustomDelegateDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKc-ge-VRD">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="142"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hby-xE-i3b">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="97"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOg-FK-kao">
+                                <rect key="frame" x="10" y="107" width="108" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJn-Ye-OtE">
+                                <rect key="frame" x="123" y="107" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BJn-Ye-OtE" secondAttribute="height" multiplier="1:1" id="uit-hq-M2S"/>
+                                    <constraint firstAttribute="height" constant="25" id="unt-a9-Tmy"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_down"/>
+                                <state key="selected" image="ic_up"/>
+                                <connections>
+                                    <action selector="onBtnUpDown:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iGH-cm-bYA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hby-xE-i3b" firstAttribute="leading" secondItem="xKc-ge-VRD" secondAttribute="leading" id="2UB-Hd-zHj"/>
+                            <constraint firstItem="MOg-FK-kao" firstAttribute="top" secondItem="BJn-Ye-OtE" secondAttribute="top" id="6dz-w9-CcZ"/>
+                            <constraint firstItem="BJn-Ye-OtE" firstAttribute="top" secondItem="hby-xE-i3b" secondAttribute="bottom" constant="10" id="9oT-uW-QV0"/>
+                            <constraint firstItem="MOg-FK-kao" firstAttribute="leading" secondItem="xKc-ge-VRD" secondAttribute="leading" constant="10" id="FIJ-ag-2dv"/>
+                            <constraint firstItem="BJn-Ye-OtE" firstAttribute="leading" secondItem="MOg-FK-kao" secondAttribute="trailing" constant="5" id="I1J-Er-2SP"/>
+                            <constraint firstAttribute="bottom" secondItem="BJn-Ye-OtE" secondAttribute="bottom" constant="10" id="O3v-x0-n4M"/>
+                            <constraint firstAttribute="trailing" secondItem="hby-xE-i3b" secondAttribute="trailing" id="RZr-bg-SAu"/>
+                            <constraint firstAttribute="trailing" secondItem="BJn-Ye-OtE" secondAttribute="trailing" constant="10" id="VYs-T1-Qum"/>
+                            <constraint firstItem="MOg-FK-kao" firstAttribute="bottom" secondItem="BJn-Ye-OtE" secondAttribute="bottom" id="ZjA-Wx-ozm"/>
+                            <constraint firstItem="hby-xE-i3b" firstAttribute="top" secondItem="xKc-ge-VRD" secondAttribute="top" id="aGh-CF-xAO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="xKc-ge-VRD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3HD-u1-pjK"/>
+                <constraint firstAttribute="bottom" secondItem="xKc-ge-VRD" secondAttribute="bottom" id="ZS9-oU-MFs"/>
+                <constraint firstAttribute="trailing" secondItem="xKc-ge-VRD" secondAttribute="trailing" id="e8C-zS-seK"/>
+                <constraint firstItem="xKc-ge-VRD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nir-hA-2Bz"/>
+            </constraints>
+            <size key="customSize" width="158" height="142"/>
+            <connections>
+                <outlet property="btnUpDown" destination="BJn-Ye-OtE" id="tqf-nf-6N0"/>
+                <outlet property="imgAlbums" destination="hby-xE-i3b" id="G8R-6u-vII"/>
+                <outlet property="txtName" destination="MOg-FK-kao" id="R5A-TK-ar2"/>
+            </connections>
+            <point key="canvasLocation" x="161.83206106870227" y="43.661971830985919"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_down" width="16" height="16"/>
+        <image name="ic_up" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "de669073-783e-4164-96d6-267cf2c337c2",
+		"name": "Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17908476",
+		"_collection_link": "https://dark-meteor-634888.postman.co/workspace/My-Workspace~daff39c2-b97b-4a36-8989-129489d812e2/collection/17908476-de669073-783e-4164-96d6-267cf2c337c2?action=share&source=collection_link&creator=17908476"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "NDu312JGl3Iyq67jVpdeqURnk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"name\":\"Kirti Sharma\",\r\n    \"phone\":\"98294829398\",\r\n\t\"username\":\"kirti\", \r\n\t\"email\":\"kirtisharma@gmail.com\",\r\n\t\"password\":\"12345\",\r\n    \"height\":\"160\",\r\n    \"weight\":\"40\",\r\n    \"gender\":\"Female\",\r\n    \"image\":\"profile.jpg\",\r\n    \"device_type\":\"Android\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://blehealthplus.com/demo/index.php/api/userregister"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"email\":\"kirti1@gmail.com\",\r\n\t\"password\":\"12345\",\r\n    \"device_type\":\"Android\",\r\n    \"fcmToken\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://blehealthplus.com/demo/index.php/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cwc5vwMhOG0FWiw1UAY6ua9Ai",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"user_id\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://blehealthplus.com/demo/index.php/api/getProfile"
+			},
+			"response": []
+		},
+		{
+			"name": "getTemperature",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cwc5vwMhOG0FWiw1UAY6ua9Ai",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"user_id\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://blehealthplus.com/demo/index.php/api/getTemperature"
+			},
+			"response": []
+		},
+		{
+			"name": "Temperature List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cwc5vwMhOG0FWiw1UAY6ua9Ai",
+						"type": "text"
+					}
+				],
+				"url": "https://blehealthplus.com/demo/index.php/api/temperatureList"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cwc5vwMhOG0FWiw1UAY6ua9Ai",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"user_id\":\"2\",\r\n    \"name\":\"Kirti Sharma\",\r\n    \"phone\":\"98294829398\",\r\n\t\"username\":\"kirti\",\r\n    \"height\":\"160\",\r\n    \"weight\":\"50\",\r\n    \"gender\":\"Female\",\r\n    \"image\":\"profile.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://blehealthplus.com/demo/index.php/api/editProfile"
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cwc5vwMhOG0FWiw1UAY6ua9Ai",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"email\":\"test@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://blehealthplus.com/demo/index.php/api/forgotPassword"
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cwc5vwMhOG0FWiw1UAY6ua9Ai",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/BAPS/Desktop/IPAccessManagement.png"
+						}
+					]
+				},
+				"url": "https://blehealthplus.com/demo/index.php/api/uploadImage"
+			},
+			"response": []
+		}
+	]
+}

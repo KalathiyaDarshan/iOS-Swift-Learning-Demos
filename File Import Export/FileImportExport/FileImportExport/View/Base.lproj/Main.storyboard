@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FileImportExport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aq-iJ-qtw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLR-OI-kgu">
+                                        <rect key="frame" x="20" y="418" width="240" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-4c-IiL">
+                                        <rect key="frame" x="270" y="411" width="124" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="QcY-J4-trX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Selected File"/>
+                                        <connections>
+                                            <action selector="btnSelectFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ol9-x3-fyU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dPV-4c-IiL" firstAttribute="width" secondItem="2aq-iJ-qtw" secondAttribute="width" multiplier="0.3" id="0Zc-lR-edt"/>
+                                    <constraint firstItem="cLR-OI-kgu" firstAttribute="leading" secondItem="2aq-iJ-qtw" secondAttribute="leading" constant="20" id="PwU-yw-KfZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPV-4c-IiL" secondAttribute="trailing" constant="20" id="Y8K-AP-nxB"/>
+                                    <constraint firstItem="dPV-4c-IiL" firstAttribute="centerY" secondItem="2aq-iJ-qtw" secondAttribute="centerY" id="bKP-Ed-wZ4"/>
+                                    <constraint firstItem="dPV-4c-IiL" firstAttribute="leading" secondItem="cLR-OI-kgu" secondAttribute="trailing" constant="10" id="n9Y-hl-uSt"/>
+                                    <constraint firstItem="cLR-OI-kgu" firstAttribute="centerY" secondItem="2aq-iJ-qtw" secondAttribute="centerY" id="qzg-5q-DQV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2aq-iJ-qtw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CHj-hC-5pL"/>
+                            <constraint firstItem="2aq-iJ-qtw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RI8-9X-Ue1"/>
+                            <constraint firstItem="2aq-iJ-qtw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ybg-N6-vXr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2aq-iJ-qtw" secondAttribute="bottom" id="op9-VU-diY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblUrl" destination="cLR-OI-kgu" id="nOp-5f-gux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

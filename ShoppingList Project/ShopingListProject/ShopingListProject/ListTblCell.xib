@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="ListTblCell" customModule="ShopingListProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtk-K2-B3H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="itW-BX-VnH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-so-bGa">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="kMU-nb-h4l"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtU-kg-ZWA">
+                                        <rect key="frame" x="0.0" y="90" width="320" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9eH-XZ-5hA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FtU-kg-ZWA" secondAttribute="bottom" id="EIJ-lb-LDW"/>
+                                    <constraint firstAttribute="trailing" secondItem="ImF-so-bGa" secondAttribute="trailing" id="aH1-Kl-TmS"/>
+                                    <constraint firstItem="ImF-so-bGa" firstAttribute="leading" secondItem="itW-BX-VnH" secondAttribute="leading" id="fuJ-Xf-TdW"/>
+                                    <constraint firstAttribute="trailing" secondItem="FtU-kg-ZWA" secondAttribute="trailing" id="gU7-2U-xZc"/>
+                                    <constraint firstItem="FtU-kg-ZWA" firstAttribute="leading" secondItem="itW-BX-VnH" secondAttribute="leading" id="gbZ-XF-jwF"/>
+                                    <constraint firstItem="ImF-so-bGa" firstAttribute="top" secondItem="itW-BX-VnH" secondAttribute="top" id="soG-Ti-xJ9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="itW-BX-VnH" firstAttribute="top" secondItem="Rtk-K2-B3H" secondAttribute="top" id="FJX-LW-j8U"/>
+                            <constraint firstItem="itW-BX-VnH" firstAttribute="leading" secondItem="Rtk-K2-B3H" secondAttribute="leading" id="SZV-U2-kNN"/>
+                            <constraint firstAttribute="trailing" secondItem="itW-BX-VnH" secondAttribute="trailing" id="g2p-jI-ke2"/>
+                            <constraint firstAttribute="bottom" secondItem="itW-BX-VnH" secondAttribute="bottom" id="qtf-AZ-wcU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rtk-K2-B3H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DyI-hm-sJ2"/>
+                    <constraint firstItem="Rtk-K2-B3H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ezm-zE-3tW"/>
+                    <constraint firstAttribute="bottom" secondItem="Rtk-K2-B3H" secondAttribute="bottom" id="vs5-2L-Zog"/>
+                    <constraint firstAttribute="trailing" secondItem="Rtk-K2-B3H" secondAttribute="trailing" id="wHd-Ae-nMz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="140.57971014492756" y="79.017857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

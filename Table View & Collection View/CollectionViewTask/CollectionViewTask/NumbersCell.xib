@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NumbersCell" id="gTV-IL-0wX" customClass="NumbersCell" customModule="CollectionViewTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="258" height="208"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="208"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIB-kW-rBf">
+                        <rect key="frame" x="0.0" y="0.0" width="258" height="208"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NA6-jJ-jCD" userLabel="View1">
+                                <rect key="frame" x="10" y="10" width="238" height="188"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sn-5r-TlS">
+                                        <rect key="frame" x="10" y="10" width="218" height="168"/>
+                                        <string key="text">NumberNumber fhgf  gfhfghfgh fgh fg fgh fgh fgh gh gvh vghg gv jhjghj fg vg vg vjvhjvgjvnvj vhjhj hj hj ghj ghj ghj hbj hb jhbj ghj ghj vb  dh fhgf  gfhfghfgh fgh fg fgh fgh fgh gh gvh vghg gv jhjghj fg vg vg vjvhjvgjvnvj vhjhj hj hj ghj ghj ghj hbj hb jhbj ghj ghj vb  dh</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="8sn-5r-TlS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NA6-jJ-jCD" secondAttribute="leading" constant="10" id="5gl-4t-i9H"/>
+                                    <constraint firstItem="8sn-5r-TlS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NA6-jJ-jCD" secondAttribute="top" constant="10" id="J1n-sU-126"/>
+                                    <constraint firstItem="8sn-5r-TlS" firstAttribute="centerX" secondItem="NA6-jJ-jCD" secondAttribute="centerX" id="Y4V-ra-szo"/>
+                                    <constraint firstItem="8sn-5r-TlS" firstAttribute="centerY" secondItem="NA6-jJ-jCD" secondAttribute="centerY" id="j6d-oI-XKT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NA6-jJ-jCD" secondAttribute="trailing" constant="10" id="Gou-zf-ykt"/>
+                            <constraint firstAttribute="bottom" secondItem="NA6-jJ-jCD" secondAttribute="bottom" constant="10" id="Ksa-Sg-DJG"/>
+                            <constraint firstItem="NA6-jJ-jCD" firstAttribute="leading" secondItem="QIB-kW-rBf" secondAttribute="leading" constant="10" id="Wip-jh-V5L"/>
+                            <constraint firstItem="NA6-jJ-jCD" firstAttribute="top" secondItem="QIB-kW-rBf" secondAttribute="top" constant="10" id="rb4-nt-UgG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QIB-kW-rBf" secondAttribute="bottom" id="5Vs-ad-aQD"/>
+                <constraint firstAttribute="trailing" secondItem="QIB-kW-rBf" secondAttribute="trailing" id="S0h-ac-YSp"/>
+                <constraint firstItem="QIB-kW-rBf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gAm-3M-9Gv"/>
+                <constraint firstItem="QIB-kW-rBf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yOq-RT-jFc"/>
+            </constraints>
+            <size key="customSize" width="258" height="208"/>
+            <connections>
+                <outlet property="cellView" destination="QIB-kW-rBf" id="mXj-MT-dFK"/>
+                <outlet property="lblNumbers" destination="8sn-5r-TlS" id="61P-s9-aLf"/>
+            </connections>
+            <point key="canvasLocation" x="-92.753623188405811" y="132.58928571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

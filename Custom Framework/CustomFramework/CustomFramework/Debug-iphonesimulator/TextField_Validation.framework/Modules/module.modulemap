@@ -1,0 +1,11 @@
+framework module TextField_Validation {
+  umbrella header "TextField_Validation.h"
+
+  export *
+  module * { export * }
+}
+
+module TextField_Validation.Swift {
+    header "TextField_Validation-Swift.h"
+    requires objc
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderView" id="iN0-l3-epB" customClass="HeaderViewXib" customModule="ShopingListProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfk-Xx-ziS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-jP-Jl5">
+                            <rect key="frame" x="5" y="0.0" width="409" height="57"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9l-jF-sta">
+                                    <rect key="frame" x="25" y="15.5" width="52" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4L-xP-NAE">
+                                    <rect key="frame" x="336" y="16" width="13" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g16-e6-cRV">
+                                    <rect key="frame" x="364" y="20" width="25" height="17.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="Ljv-N5-gv5"/>
+                                        <constraint firstAttribute="width" secondItem="g16-e6-cRV" secondAttribute="height" multiplier="1:1" id="ubA-ZV-GN0"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <imageReference key="backgroundImage" image="chevron.down" catalog="system" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="dropDownAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="VAp-vv-Jza"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="g16-e6-cRV" firstAttribute="leading" secondItem="H4L-xP-NAE" secondAttribute="trailing" constant="15" id="FXF-eO-w0R"/>
+                                <constraint firstItem="H4L-xP-NAE" firstAttribute="top" secondItem="g16-e6-cRV" secondAttribute="top" id="HiZ-I8-IM8"/>
+                                <constraint firstItem="H4L-xP-NAE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i9l-jF-sta" secondAttribute="trailing" constant="30" id="Tob-jV-Nut"/>
+                                <constraint firstAttribute="trailing" secondItem="g16-e6-cRV" secondAttribute="trailing" constant="20" id="WQH-jF-lCq"/>
+                                <constraint firstItem="i9l-jF-sta" firstAttribute="leading" secondItem="tq4-jP-Jl5" secondAttribute="leading" constant="25" id="YcF-IW-sky"/>
+                                <constraint firstItem="g16-e6-cRV" firstAttribute="centerY" secondItem="tq4-jP-Jl5" secondAttribute="centerY" id="jB6-QO-0eC"/>
+                                <constraint firstItem="H4L-xP-NAE" firstAttribute="bottom" secondItem="g16-e6-cRV" secondAttribute="bottom" id="sEL-px-k2Y"/>
+                                <constraint firstItem="i9l-jF-sta" firstAttribute="centerY" secondItem="tq4-jP-Jl5" secondAttribute="centerY" id="yXY-tj-6W0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstItem="tq4-jP-Jl5" firstAttribute="leading" secondItem="rfk-Xx-ziS" secondAttribute="leading" constant="5" id="8Tn-0r-wAF"/>
+                        <constraint firstItem="tq4-jP-Jl5" firstAttribute="top" secondItem="rfk-Xx-ziS" secondAttribute="top" id="MbT-93-XMT"/>
+                        <constraint firstAttribute="trailing" secondItem="tq4-jP-Jl5" secondAttribute="trailing" id="QJA-CO-zc9"/>
+                        <constraint firstAttribute="bottom" secondItem="tq4-jP-Jl5" secondAttribute="bottom" id="iM7-9d-QcM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="IIQ-7F-dlh"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rfk-Xx-ziS" secondAttribute="bottom" id="1aq-FP-o8c"/>
+                <constraint firstAttribute="trailing" secondItem="rfk-Xx-ziS" secondAttribute="trailing" id="8rW-AV-eZE"/>
+                <constraint firstItem="rfk-Xx-ziS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IHf-7h-zRr"/>
+                <constraint firstItem="rfk-Xx-ziS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="npq-xb-Xxn"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblCount" destination="H4L-xP-NAE" id="Huq-2t-Bdg"/>
+                <outlet property="lblHeader" destination="i9l-jF-sta" id="O9N-gI-YiS"/>
+            </connections>
+            <point key="canvasLocation" x="-163.768115942029" y="-199.88839285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

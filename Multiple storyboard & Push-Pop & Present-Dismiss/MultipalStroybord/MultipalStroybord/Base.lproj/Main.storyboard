@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tq9-hB-jAf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MultipalStroybord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHq-RF-VeK">
+                                <rect key="frame" x="132" y="288" width="150" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="XJu-As-SRz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDA-AP-d3u">
+                                <rect key="frame" x="155" y="352" width="104" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Second Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Actionsend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwZ-bF-6gN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.53320181640220876" green="0.70793823605996908" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UHq-RF-VeK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKZ-bX-8fE"/>
+                            <constraint firstItem="nDA-AP-d3u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mp4-41-aUJ"/>
+                            <constraint firstItem="UHq-RF-VeK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="cuZ-wN-5t3"/>
+                            <constraint firstItem="nDA-AP-d3u" firstAttribute="top" secondItem="UHq-RF-VeK" secondAttribute="bottom" constant="30" id="wYe-8V-gJh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HsH-lO-nR3"/>
+                    <connections>
+                        <outlet property="btnSend" destination="nDA-AP-d3u" id="WYz-cQ-092"/>
+                        <outlet property="txtName" destination="UHq-RF-VeK" id="DOM-pc-Fgg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="65.625"/>
+        </scene>
+        <!--Second Screen-->
+        <scene sceneID="smc-JL-20v">
+            <objects>
+                <viewController storyboardIdentifier="Secondviewcontroller" title="Second Screen" id="IcD-Jx-h4R" customClass="Secondviewcontroller" customModule="MultipalStroybord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MW4-vv-61L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARH-Wu-Miq">
+                                <rect key="frame" x="178.5" y="194" width="57" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbk-nU-pPK">
+                                <rect key="frame" x="156.5" y="263" width="101" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Thered Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ActionButton1:" destination="IcD-Jx-h4R" eventType="touchUpInside" id="6kD-Mu-kkF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Op-tk-Xfn">
+                                <rect key="frame" x="158" y="318" width="98" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Fourth Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ActionButton2:" destination="IcD-Jx-h4R" eventType="touchUpInside" id="T5F-Ps-klB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zab-iQ-hqx">
+                                <rect key="frame" x="144.5" y="373" width="125" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Second Storybord">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ActionButton3:" destination="IcD-Jx-h4R" eventType="touchUpInside" id="6sr-14-Foc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q0b-Kk-Lwq"/>
+                        <color key="backgroundColor" red="0.53360501452448006" green="0.71746046199653946" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zab-iQ-hqx" firstAttribute="top" secondItem="7Op-tk-Xfn" secondAttribute="bottom" constant="25" id="06R-9j-Ogg"/>
+                            <constraint firstItem="sbk-nU-pPK" firstAttribute="top" secondItem="ARH-Wu-Miq" secondAttribute="bottom" constant="40" id="CqZ-TK-MDG"/>
+                            <constraint firstItem="zab-iQ-hqx" firstAttribute="centerX" secondItem="MW4-vv-61L" secondAttribute="centerX" id="DkN-Hc-qws"/>
+                            <constraint firstItem="7Op-tk-Xfn" firstAttribute="top" secondItem="sbk-nU-pPK" secondAttribute="bottom" constant="25" id="asd-bb-s8b"/>
+                            <constraint firstItem="ARH-Wu-Miq" firstAttribute="centerX" secondItem="MW4-vv-61L" secondAttribute="centerX" id="hIJ-m7-rHx"/>
+                            <constraint firstItem="7Op-tk-Xfn" firstAttribute="centerX" secondItem="MW4-vv-61L" secondAttribute="centerX" id="rr1-LJ-I6n"/>
+                            <constraint firstItem="ARH-Wu-Miq" firstAttribute="top" secondItem="q0b-Kk-Lwq" secondAttribute="top" constant="150" id="tYa-GV-gd9"/>
+                            <constraint firstItem="sbk-nU-pPK" firstAttribute="centerX" secondItem="MW4-vv-61L" secondAttribute="centerX" id="uLE-mS-ZjW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblDetail" destination="ARH-Wu-Miq" id="Aa1-Qt-m8J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c62-Vy-ywf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905.7971014492755" y="-284.59821428571428"/>
+        </scene>
+        <!--Fourth Screen-->
+        <scene sceneID="8X0-YW-kq7">
+            <objects>
+                <viewController storyboardIdentifier="FourthViewController" title="Fourth Screen" id="bCZ-tG-Lsb" customClass="FourthViewController" customModule="MultipalStroybord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eeW-A2-8lL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCl-q8-wno">
+                                <rect key="frame" x="178.5" y="194" width="57" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcT-AF-uj6">
+                                <rect key="frame" x="156.5" y="253" width="101" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Thered Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Actionbutton1:" destination="bCZ-tG-Lsb" eventType="touchUpInside" id="4LP-IF-s7r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCX-G1-HkM">
+                                <rect key="frame" x="144.5" y="308" width="125" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Second Storybord">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ActunButton:" destination="bCZ-tG-Lsb" eventType="touchUpInside" id="pdA-Ad-2Kz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lgS-Rj-LVi"/>
+                        <color key="backgroundColor" red="0.53360501449999997" green="0.71746046200000002" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IcT-AF-uj6" firstAttribute="centerX" secondItem="eeW-A2-8lL" secondAttribute="centerX" id="7Jn-nL-GG3"/>
+                            <constraint firstItem="sCX-G1-HkM" firstAttribute="centerX" secondItem="eeW-A2-8lL" secondAttribute="centerX" id="AIg-co-geb"/>
+                            <constraint firstItem="QCl-q8-wno" firstAttribute="centerX" secondItem="eeW-A2-8lL" secondAttribute="centerX" id="Auj-cd-MKE"/>
+                            <constraint firstItem="sCX-G1-HkM" firstAttribute="top" secondItem="IcT-AF-uj6" secondAttribute="bottom" constant="25" id="IDA-SR-FVo"/>
+                            <constraint firstItem="QCl-q8-wno" firstAttribute="top" secondItem="lgS-Rj-LVi" secondAttribute="top" constant="150" id="oaR-i4-K8I"/>
+                            <constraint firstItem="IcT-AF-uj6" firstAttribute="top" secondItem="QCl-q8-wno" secondAttribute="bottom" constant="30" id="s83-Pj-tRH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblFourth" destination="QCl-q8-wno" id="i4j-f9-Jb5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja2-n4-wu8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905.7971014492755" y="424.55357142857139"/>
+        </scene>
+        <!--Thred  Screen-->
+        <scene sceneID="6bu-5t-gpk">
+            <objects>
+                <viewController storyboardIdentifier="TheredViewController" title="Thred  Screen" id="aPB-Tk-0kj" customClass="TheredViewController" customModule="MultipalStroybord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I30-5u-bq3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVG-LZ-iTj">
+                                <rect key="frame" x="178.5" y="433.5" width="57" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rHy-cN-GCn"/>
+                        <color key="backgroundColor" red="0.53360501449999997" green="0.71746046200000002" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RVG-LZ-iTj" firstAttribute="centerX" secondItem="I30-5u-bq3" secondAttribute="centerX" id="egs-JT-cTR"/>
+                            <constraint firstItem="RVG-LZ-iTj" firstAttribute="centerY" secondItem="I30-5u-bq3" secondAttribute="centerY" id="zpy-Ou-1Si"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblThred" destination="RVG-LZ-iTj" id="AVz-ZF-prl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpl-HB-ECW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2934.7826086956525" y="-50.223214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z0Y-YL-XyK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tq9-hB-jAf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZLY-kW-Sfa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Yjt-BF-kgN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5K2-bM-qfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

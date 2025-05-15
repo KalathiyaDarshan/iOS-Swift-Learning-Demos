@@ -1,0 +1,6 @@
+framework module Pods_BLEPremiumDesign {
+  umbrella header "Pods-BLEPremiumDesign-umbrella.h"
+
+  export *
+  module * { export * }
+}

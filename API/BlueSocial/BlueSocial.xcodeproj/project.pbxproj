@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044807312C58EA3D00D49D00 /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448072F2C58EA3D00D49D00 /* RegistrationModel.swift */; };
+		044807322C58EA3D00D49D00 /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044807302C58EA3D00D49D00 /* RegistrationResponse.swift */; };
+		044CDB0F2C57696100FF7ED9 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CDB0E2C57696100FF7ED9 /* RegisterVC.swift */; };
+		044CDB122C5772F200FF7ED9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CDB112C5772F200FF7ED9 /* HomeVC.swift */; };
+		044CEF662C5376B500E6A9D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CEF652C5376B500E6A9D3 /* AppDelegate.swift */; };
+		044CEF682C5376B500E6A9D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CEF672C5376B500E6A9D3 /* SceneDelegate.swift */; };
+		044CEF6A2C5376B500E6A9D3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CEF692C5376B500E6A9D3 /* LoginVC.swift */; };
+		044CEF6D2C5376B500E6A9D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF6B2C5376B500E6A9D3 /* Main.storyboard */; };
+		044CEF6F2C5376B800E6A9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF6E2C5376B800E6A9D3 /* Assets.xcassets */; };
+		044CEF722C5376B800E6A9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF702C5376B800E6A9D3 /* LaunchScreen.storyboard */; };
+		044CEF902C53805800E6A9D3 /* RedHatDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF7E2C53805800E6A9D3 /* RedHatDisplay-BlackItalic.ttf */; };
+		044CEF912C53805800E6A9D3 /* RedHatDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF7F2C53805800E6A9D3 /* RedHatDisplay-Black.ttf */; };
+		044CEF922C53805800E6A9D3 /* RedHatDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF802C53805800E6A9D3 /* RedHatDisplay-ExtraBold.ttf */; };
+		044CEF932C53805800E6A9D3 /* RedHatDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF812C53805800E6A9D3 /* RedHatDisplay-MediumItalic.ttf */; };
+		044CEF942C53805800E6A9D3 /* RedHatDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF822C53805800E6A9D3 /* RedHatDisplay-SemiBoldItalic.ttf */; };
+		044CEF952C53805800E6A9D3 /* RedHatDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF832C53805800E6A9D3 /* RedHatDisplay-Italic.ttf */; };
+		044CEF962C53805800E6A9D3 /* RedHatDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF842C53805800E6A9D3 /* RedHatDisplay-Bold.ttf */; };
+		044CEF972C53805800E6A9D3 /* RedHatDisplay-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF852C53805800E6A9D3 /* RedHatDisplay-LightItalic.ttf */; };
+		044CEF982C53805800E6A9D3 /* RedHatDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF862C53805800E6A9D3 /* RedHatDisplay-ExtraBoldItalic.ttf */; };
+		044CEF992C53805800E6A9D3 /* RedHatDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF872C53805800E6A9D3 /* RedHatDisplay-Medium.ttf */; };
+		044CEF9A2C53805800E6A9D3 /* RedHatDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF882C53805800E6A9D3 /* RedHatDisplay-SemiBold.ttf */; };
+		044CEF9B2C53805800E6A9D3 /* RedHatDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF892C53805800E6A9D3 /* RedHatDisplay-BoldItalic.ttf */; };
+		044CEF9C2C53805800E6A9D3 /* RedHatDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF8A2C53805800E6A9D3 /* RedHatDisplay-Light.ttf */; };
+		044CEF9D2C53805800E6A9D3 /* RedHatDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF8B2C53805800E6A9D3 /* RedHatDisplay-Regular.ttf */; };
+		044CEF9E2C53805800E6A9D3 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF8C2C53805800E6A9D3 /* OFL.txt */; };
+		044CEF9F2C53805800E6A9D3 /* RedHatDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF8D2C53805800E6A9D3 /* RedHatDisplay-Italic-VariableFont_wght.ttf */; };
+		044CEFA02C53805800E6A9D3 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF8E2C53805800E6A9D3 /* README.txt */; };
+		044CEFA12C53805800E6A9D3 /* RedHatDisplay-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044CEF8F2C53805800E6A9D3 /* RedHatDisplay-VariableFont_wght.ttf */; };
+		04AEB8C12C5795BD00FA178A /* ColorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEB8C02C5795BD00FA178A /* ColorClass.swift */; };
+		04AEB8C52C57992400FA178A /* TextFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEB8C42C57992400FA178A /* TextFieldValidation.swift */; };
+		04AEB8E12C57B2B200FA178A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEB8E02C57B2B200FA178A /* APIService.swift */; };
+		04AEB8ED2C57BDCF00FA178A /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEB8EC2C57BDCF00FA178A /* LoginResponse.swift */; };
+		04AEB8F12C57BE6700FA178A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEB8F02C57BE6700FA178A /* LoginModel.swift */; };
+		04AEB8F62C57C76B00FA178A /* UserLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEB8F52C57C76B00FA178A /* UserLocalData.swift */; };
+		FE9A8199A4B53A9338CC375E /* Pods_BlueSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AB922EF4FA3807C6EEB0AD /* Pods_BlueSocial.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0448072F2C58EA3D00D49D00 /* RegistrationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		044807302C58EA3D00D49D00 /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
+		044CDB0E2C57696100FF7ED9 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		044CDB112C5772F200FF7ED9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		044CEF622C5376B500E6A9D3 /* BlueSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044CEF652C5376B500E6A9D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		044CEF672C5376B500E6A9D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		044CEF692C5376B500E6A9D3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		044CEF6C2C5376B500E6A9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044CEF6E2C5376B800E6A9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044CEF712C5376B800E6A9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044CEF732C5376B800E6A9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044CEF7E2C53805800E6A9D3 /* RedHatDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		044CEF7F2C53805800E6A9D3 /* RedHatDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Black.ttf"; sourceTree = "<group>"; };
+		044CEF802C53805800E6A9D3 /* RedHatDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		044CEF812C53805800E6A9D3 /* RedHatDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		044CEF822C53805800E6A9D3 /* RedHatDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		044CEF832C53805800E6A9D3 /* RedHatDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		044CEF842C53805800E6A9D3 /* RedHatDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		044CEF852C53805800E6A9D3 /* RedHatDisplay-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-LightItalic.ttf"; sourceTree = "<group>"; };
+		044CEF862C53805800E6A9D3 /* RedHatDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		044CEF872C53805800E6A9D3 /* RedHatDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		044CEF882C53805800E6A9D3 /* RedHatDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		044CEF892C53805800E6A9D3 /* RedHatDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		044CEF8A2C53805800E6A9D3 /* RedHatDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Light.ttf"; sourceTree = "<group>"; };
+		044CEF8B2C53805800E6A9D3 /* RedHatDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		044CEF8C2C53805800E6A9D3 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		044CEF8D2C53805800E6A9D3 /* RedHatDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		044CEF8E2C53805800E6A9D3 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		044CEF8F2C53805800E6A9D3 /* RedHatDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		04AEB8C02C5795BD00FA178A /* ColorClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorClass.swift; sourceTree = "<group>"; };
+		04AEB8C42C57992400FA178A /* TextFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidation.swift; sourceTree = "<group>"; };
+		04AEB8E02C57B2B200FA178A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		04AEB8EC2C57BDCF00FA178A /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		04AEB8F02C57BE6700FA178A /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		04AEB8F52C57C76B00FA178A /* UserLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalData.swift; sourceTree = "<group>"; };
+		54E12A27345C272E623AC92A /* Pods-BlueSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSocial.release.xcconfig"; path = "Target Support Files/Pods-BlueSocial/Pods-BlueSocial.release.xcconfig"; sourceTree = "<group>"; };
+		66AB922EF4FA3807C6EEB0AD /* Pods_BlueSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA126AA1E00ABEDE0BDE0DAA /* Pods-BlueSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSocial.debug.xcconfig"; path = "Target Support Files/Pods-BlueSocial/Pods-BlueSocial.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044CEF5F2C5376B500E6A9D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9A8199A4B53A9338CC375E /* Pods_BlueSocial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0448072D2C58EA1000D49D00 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04AEB8EC2C57BDCF00FA178A /* LoginResponse.swift */,
+				04AEB8F02C57BE6700FA178A /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0448072E2C58EA2200D49D00 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				044807302C58EA3D00D49D00 /* RegistrationResponse.swift */,
+				0448072F2C58EA3D00D49D00 /* RegistrationModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		044CEF592C5376B500E6A9D3 = {
+			isa = PBXGroup;
+			children = (
+				044CEF642C5376B500E6A9D3 /* BlueSocial */,
+				044CEF632C5376B500E6A9D3 /* Products */,
+				232AE5912BCA45494FF7B1BB /* Pods */,
+				9E4F5B59BA1DFDBA4FD751BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		044CEF632C5376B500E6A9D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044CEF622C5376B500E6A9D3 /* BlueSocial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044CEF642C5376B500E6A9D3 /* BlueSocial */ = {
+			isa = PBXGroup;
+			children = (
+				044CEFA42C53806F00E6A9D3 /* Delegate */,
+				04AEB8C72C57ADA800FA178A /* Model */,
+				044CEFA62C53809100E6A9D3 /* Controller */,
+				044CEFA52C53807D00E6A9D3 /* View */,
+				044CEFA72C5380B900E6A9D3 /* Assets */,
+				044CEF732C5376B800E6A9D3 /* Info.plist */,
+			);
+			path = BlueSocial;
+			sourceTree = "<group>";
+		};
+		044CEF7C2C53805800E6A9D3 /* Red_Hat_Display */ = {
+			isa = PBXGroup;
+			children = (
+				044CEF7D2C53805800E6A9D3 /* static */,
+				044CEF8C2C53805800E6A9D3 /* OFL.txt */,
+				044CEF8D2C53805800E6A9D3 /* RedHatDisplay-Italic-VariableFont_wght.ttf */,
+				044CEF8E2C53805800E6A9D3 /* README.txt */,
+				044CEF8F2C53805800E6A9D3 /* RedHatDisplay-VariableFont_wght.ttf */,
+			);
+			path = Red_Hat_Display;
+			sourceTree = "<group>";
+		};
+		044CEF7D2C53805800E6A9D3 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				044CEF7E2C53805800E6A9D3 /* RedHatDisplay-BlackItalic.ttf */,
+				044CEF7F2C53805800E6A9D3 /* RedHatDisplay-Black.ttf */,
+				044CEF802C53805800E6A9D3 /* RedHatDisplay-ExtraBold.ttf */,
+				044CEF812C53805800E6A9D3 /* RedHatDisplay-MediumItalic.ttf */,
+				044CEF822C53805800E6A9D3 /* RedHatDisplay-SemiBoldItalic.ttf */,
+				044CEF832C53805800E6A9D3 /* RedHatDisplay-Italic.ttf */,
+				044CEF842C53805800E6A9D3 /* RedHatDisplay-Bold.ttf */,
+				044CEF852C53805800E6A9D3 /* RedHatDisplay-LightItalic.ttf */,
+				044CEF862C53805800E6A9D3 /* RedHatDisplay-ExtraBoldItalic.ttf */,
+				044CEF872C53805800E6A9D3 /* RedHatDisplay-Medium.ttf */,
+				044CEF882C53805800E6A9D3 /* RedHatDisplay-SemiBold.ttf */,
+				044CEF892C53805800E6A9D3 /* RedHatDisplay-BoldItalic.ttf */,
+				044CEF8A2C53805800E6A9D3 /* RedHatDisplay-Light.ttf */,
+				044CEF8B2C53805800E6A9D3 /* RedHatDisplay-Regular.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		044CEFA32C53806200E6A9D3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				044CEF7C2C53805800E6A9D3 /* Red_Hat_Display */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		044CEFA42C53806F00E6A9D3 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				044CEF652C5376B500E6A9D3 /* AppDelegate.swift */,
+				044CEF672C5376B500E6A9D3 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		044CEFA52C53807D00E6A9D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				044CEF6B2C5376B500E6A9D3 /* Main.storyboard */,
+				044CEF702C5376B800E6A9D3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		044CEFA62C53809100E6A9D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				044CEF692C5376B500E6A9D3 /* LoginVC.swift */,
+				044CDB0E2C57696100FF7ED9 /* RegisterVC.swift */,
+				044CDB112C5772F200FF7ED9 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044CEFA72C5380B900E6A9D3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				044CEFA32C53806200E6A9D3 /* Font */,
+				044CEF6E2C5376B800E6A9D3 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		04AEB8BF2C5795A200FA178A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				04AEB8F52C57C76B00FA178A /* UserLocalData.swift */,
+				04AEB8C02C5795BD00FA178A /* ColorClass.swift */,
+				04AEB8C42C57992400FA178A /* TextFieldValidation.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		04AEB8C72C57ADA800FA178A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04AEB8DF2C57B27700FA178A /* APIService */,
+				04AEB8C82C57ADFC00FA178A /* APIModel */,
+				04AEB8BF2C5795A200FA178A /* Class */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04AEB8C82C57ADFC00FA178A /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				0448072E2C58EA2200D49D00 /* Register */,
+				0448072D2C58EA1000D49D00 /* Login */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
+		04AEB8DF2C57B27700FA178A /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				04AEB8E02C57B2B200FA178A /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		232AE5912BCA45494FF7B1BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA126AA1E00ABEDE0BDE0DAA /* Pods-BlueSocial.debug.xcconfig */,
+				54E12A27345C272E623AC92A /* Pods-BlueSocial.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E4F5B59BA1DFDBA4FD751BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66AB922EF4FA3807C6EEB0AD /* Pods_BlueSocial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044CEF612C5376B500E6A9D3 /* BlueSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044CEF762C5376B800E6A9D3 /* Build configuration list for PBXNativeTarget "BlueSocial" */;
+			buildPhases = (
+				26429A544DFB3E0D501821C5 /* [CP] Check Pods Manifest.lock */,
+				044CEF5E2C5376B500E6A9D3 /* Sources */,
+				044CEF5F2C5376B500E6A9D3 /* Frameworks */,
+				044CEF602C5376B500E6A9D3 /* Resources */,
+				50C72CD0F5669E92F75E054A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueSocial;
+			productName = BlueSocial;
+			productReference = 044CEF622C5376B500E6A9D3 /* BlueSocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044CEF5A2C5376B500E6A9D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					044CEF612C5376B500E6A9D3 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 044CEF5D2C5376B500E6A9D3 /* Build configuration list for PBXProject "BlueSocial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044CEF592C5376B500E6A9D3;
+			productRefGroup = 044CEF632C5376B500E6A9D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044CEF612C5376B500E6A9D3 /* BlueSocial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044CEF602C5376B500E6A9D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044CEF972C53805800E6A9D3 /* RedHatDisplay-LightItalic.ttf in Resources */,
+				044CEF982C53805800E6A9D3 /* RedHatDisplay-ExtraBoldItalic.ttf in Resources */,
+				044CEF942C53805800E6A9D3 /* RedHatDisplay-SemiBoldItalic.ttf in Resources */,
+				044CEFA12C53805800E6A9D3 /* RedHatDisplay-VariableFont_wght.ttf in Resources */,
+				044CEF722C5376B800E6A9D3 /* LaunchScreen.storyboard in Resources */,
+				044CEF932C53805800E6A9D3 /* RedHatDisplay-MediumItalic.ttf in Resources */,
+				044CEF912C53805800E6A9D3 /* RedHatDisplay-Black.ttf in Resources */,
+				044CEF9C2C53805800E6A9D3 /* RedHatDisplay-Light.ttf in Resources */,
+				044CEF9A2C53805800E6A9D3 /* RedHatDisplay-SemiBold.ttf in Resources */,
+				044CEF9B2C53805800E6A9D3 /* RedHatDisplay-BoldItalic.ttf in Resources */,
+				044CEF962C53805800E6A9D3 /* RedHatDisplay-Bold.ttf in Resources */,
+				044CEF6F2C5376B800E6A9D3 /* Assets.xcassets in Resources */,
+				044CEF9F2C53805800E6A9D3 /* RedHatDisplay-Italic-VariableFont_wght.ttf in Resources */,
+				044CEF922C53805800E6A9D3 /* RedHatDisplay-ExtraBold.ttf in Resources */,
+				044CEF9E2C53805800E6A9D3 /* OFL.txt in Resources */,
+				044CEFA02C53805800E6A9D3 /* README.txt in Resources */,
+				044CEF6D2C5376B500E6A9D3 /* Main.storyboard in Resources */,
+				044CEF9D2C53805800E6A9D3 /* RedHatDisplay-Regular.ttf in Resources */,
+				044CEF902C53805800E6A9D3 /* RedHatDisplay-BlackItalic.ttf in Resources */,
+				044CEF952C53805800E6A9D3 /* RedHatDisplay-Italic.ttf in Resources */,
+				044CEF992C53805800E6A9D3 /* RedHatDisplay-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26429A544DFB3E0D501821C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueSocial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50C72CD0F5669E92F75E054A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueSocial/Pods-BlueSocial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueSocial/Pods-BlueSocial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueSocial/Pods-BlueSocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044CEF5E2C5376B500E6A9D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AEB8C52C57992400FA178A /* TextFieldValidation.swift in Sources */,
+				044CEF6A2C5376B500E6A9D3 /* LoginVC.swift in Sources */,
+				044CDB122C5772F200FF7ED9 /* HomeVC.swift in Sources */,
+				04AEB8F12C57BE6700FA178A /* LoginModel.swift in Sources */,
+				04AEB8ED2C57BDCF00FA178A /* LoginResponse.swift in Sources */,
+				044807312C58EA3D00D49D00 /* RegistrationModel.swift in Sources */,
+				04AEB8C12C5795BD00FA178A /* ColorClass.swift in Sources */,
+				044CDB0F2C57696100FF7ED9 /* RegisterVC.swift in Sources */,
+				044807322C58EA3D00D49D00 /* RegistrationResponse.swift in Sources */,
+				044CEF662C5376B500E6A9D3 /* AppDelegate.swift in Sources */,
+				044CEF682C5376B500E6A9D3 /* SceneDelegate.swift in Sources */,
+				04AEB8E12C57B2B200FA178A /* APIService.swift in Sources */,
+				04AEB8F62C57C76B00FA178A /* UserLocalData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		044CEF6B2C5376B500E6A9D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044CEF6C2C5376B500E6A9D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		044CEF702C5376B800E6A9D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044CEF712C5376B800E6A9D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044CEF742C5376B800E6A9D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		044CEF752C5376B800E6A9D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044CEF772C5376B800E6A9D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA126AA1E00ABEDE0BDE0DAA /* Pods-BlueSocial.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7J8FUEGEL;
+				INFOPLIST_FILE = BlueSocial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluepixeltech.BlueSocial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		044CEF782C5376B800E6A9D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E12A27345C272E623AC92A /* Pods-BlueSocial.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7J8FUEGEL;
+				INFOPLIST_FILE = BlueSocial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluepixeltech.BlueSocial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044CEF5D2C5376B500E6A9D3 /* Build configuration list for PBXProject "BlueSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044CEF742C5376B800E6A9D3 /* Debug */,
+				044CEF752C5376B800E6A9D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044CEF762C5376B800E6A9D3 /* Build configuration list for PBXNativeTarget "BlueSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044CEF772C5376B800E6A9D3 /* Debug */,
+				044CEF782C5376B800E6A9D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044CEF5A2C5376B500E6A9D3 /* Project object */;
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Secondstory View Controller-->
+        <scene sceneID="F5A-kO-ifO">
+            <objects>
+                <viewController storyboardIdentifier="SecondstoryViewController" id="RDY-55-S6g" customClass="SecondstoryViewController" customModule="MultipalStroybord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqf-lt-0YU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQo-5T-pcc">
+                                <rect key="frame" x="183" y="244" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAS-aI-H6t">
+                                <rect key="frame" x="155" y="298" width="104" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Second Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ActionButon:" destination="RDY-55-S6g" eventType="touchUpInside" id="xaY-9f-EYq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mgf-fL-Arl"/>
+                        <color key="backgroundColor" red="0.92961360749604105" green="1" blue="0.29549063506717554" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HQo-5T-pcc" firstAttribute="centerX" secondItem="hqf-lt-0YU" secondAttribute="centerX" id="0nf-1m-eyX"/>
+                            <constraint firstItem="HQo-5T-pcc" firstAttribute="top" secondItem="mgf-fL-Arl" secondAttribute="top" constant="200" id="1eb-e1-70V"/>
+                            <constraint firstItem="PAS-aI-H6t" firstAttribute="top" secondItem="HQo-5T-pcc" secondAttribute="bottom" constant="30" id="p47-HL-Apj"/>
+                            <constraint firstItem="PAS-aI-H6t" firstAttribute="centerX" secondItem="hqf-lt-0YU" secondAttribute="centerX" id="wb1-jp-YTs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblsecondstory" destination="HQo-5T-pcc" id="jhR-oH-NLS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eao-V8-vp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="102"/>
+        </scene>
+        <!--Second Storybord Second View Controller-->
+        <scene sceneID="bTi-cx-bcT">
+            <objects>
+                <viewController storyboardIdentifier="SecondStorybordSecondViewController" id="6Ik-V6-J0M" customClass="SecondStorybordSecondViewController" customModule="MultipalStroybord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y8s-jb-M0I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goz-8X-q7n">
+                                <rect key="frame" x="153.5" y="433" width="107" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Frest Storybord">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ActionButon:" destination="RDY-55-S6g" eventType="touchUpInside" id="oFs-in-7C5"/>
+                                    <action selector="SecondAction:" destination="6Ik-V6-J0M" eventType="touchUpInside" id="Vbr-hc-WID"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-wd-lRJ">
+                                <rect key="frame" x="183" y="369" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jeK-M8-htb"/>
+                        <color key="backgroundColor" red="0.89555033095366254" green="1" blue="0.29161427378008542" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="goz-8X-q7n" firstAttribute="centerX" secondItem="y8s-jb-M0I" secondAttribute="centerX" id="h89-cB-3CJ"/>
+                            <constraint firstItem="goz-8X-q7n" firstAttribute="centerY" secondItem="y8s-jb-M0I" secondAttribute="centerY" id="kVS-B5-MjF"/>
+                            <constraint firstItem="eHf-wd-lRJ" firstAttribute="centerX" secondItem="y8s-jb-M0I" secondAttribute="centerX" id="mDT-eK-j0K"/>
+                            <constraint firstItem="goz-8X-q7n" firstAttribute="top" secondItem="eHf-wd-lRJ" secondAttribute="bottom" constant="40" id="tyZ-ag-WTh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblSecondStory" destination="eHf-wd-lRJ" id="TRu-oS-LFL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bo-no-8AN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

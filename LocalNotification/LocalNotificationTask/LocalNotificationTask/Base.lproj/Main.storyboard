@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qiD-bA-1IY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="LocalNotificationTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-I9-k6x">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8P4-0k-4y9">
+                                        <rect key="frame" x="20" y="297" width="374" height="180"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UF-le-PRA" userLabel="RedView">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2z-73-OyF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <color key="backgroundColor" red="0.9985340238" green="0.1183764264" blue="0.28778046369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="zrf-D4-eEN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                        <state key="normal" title="Red Notification">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnRedButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfR-aO-prX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="f2z-73-OyF" firstAttribute="top" secondItem="0UF-le-PRA" secondAttribute="top" id="JfW-dM-nIC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="f2z-73-OyF" secondAttribute="bottom" id="PKo-xV-BVe"/>
+                                                    <constraint firstItem="f2z-73-OyF" firstAttribute="leading" secondItem="0UF-le-PRA" secondAttribute="leading" id="qPE-5m-itt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="f2z-73-OyF" secondAttribute="trailing" id="xZc-sf-Kp9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ljr-ix-vkO" userLabel="BlueView">
+                                                <rect key="frame" x="0.0" y="65" width="374" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIM-G3-MHH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="v8m-jz-xpW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                        <state key="normal" title="Blue Notification">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnBlueButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLr-4Q-hiK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="lIM-G3-MHH" firstAttribute="leading" secondItem="Ljr-ix-vkO" secondAttribute="leading" id="Tax-fU-V6Q"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lIM-G3-MHH" secondAttribute="bottom" id="U2r-lF-wpO"/>
+                                                    <constraint firstItem="lIM-G3-MHH" firstAttribute="top" secondItem="Ljr-ix-vkO" secondAttribute="top" id="VPP-la-4E3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lIM-G3-MHH" secondAttribute="trailing" id="oqZ-aN-hF4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNA-Xx-Rz0" userLabel="GreenView">
+                                                <rect key="frame" x="0.0" y="130" width="374" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbB-3i-bAe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="SHg-ej-PEm"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                        <state key="normal" title="Green Notification">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnGreenButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HG2-Hj-D7B"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="dbB-3i-bAe" firstAttribute="leading" secondItem="BNA-Xx-Rz0" secondAttribute="leading" id="6VR-Jf-Mr1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dbB-3i-bAe" secondAttribute="bottom" id="BCu-tX-ONa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dbB-3i-bAe" secondAttribute="trailing" id="BVO-Cp-FFh"/>
+                                                    <constraint firstItem="dbB-3i-bAe" firstAttribute="top" secondItem="BNA-Xx-Rz0" secondAttribute="top" id="FUo-t6-pvQ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8P4-0k-4y9" secondAttribute="trailing" constant="20" id="CdO-U9-9bh"/>
+                                    <constraint firstItem="8P4-0k-4y9" firstAttribute="leading" secondItem="d3c-I9-k6x" secondAttribute="leading" constant="20" id="Giw-4Y-fpU"/>
+                                    <constraint firstItem="8P4-0k-4y9" firstAttribute="centerY" secondItem="d3c-I9-k6x" secondAttribute="centerY" id="rs6-ZW-oey"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d3c-I9-k6x" secondAttribute="trailing" id="8gl-fJ-TY4"/>
+                            <constraint firstItem="d3c-I9-k6x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EOH-Er-WWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d3c-I9-k6x" secondAttribute="bottom" id="WSa-Vp-iqw"/>
+                            <constraint firstItem="d3c-I9-k6x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kCm-jV-ugj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jw5-Uc-yqR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="65.625"/>
+        </scene>
+        <!--Red Screen-->
+        <scene sceneID="OPx-XR-7HX">
+            <objects>
+                <viewController storyboardIdentifier="RedVC" id="39S-KH-Q8w" customClass="RedVC" customModule="LocalNotificationTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jw9-YO-4eW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Red Screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i29-iE-AWs">
+                                <rect key="frame" x="10" y="431.5" width="394" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woK-5U-wUX">
+                                <rect key="frame" x="10" y="802" width="394" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IEG-Kw-fbM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <state key="normal" title="Blue Notification">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBlueButtonAction:" destination="39S-KH-Q8w" eventType="touchUpInside" id="IXh-gx-dnt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cc1-Jb-Gjo"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="Cc1-Jb-Gjo" firstAttribute="trailing" secondItem="woK-5U-wUX" secondAttribute="trailing" constant="10" id="HkU-ZZ-uRg"/>
+                            <constraint firstItem="Cc1-Jb-Gjo" firstAttribute="bottom" secondItem="woK-5U-wUX" secondAttribute="bottom" constant="10" id="g4S-wU-aNE"/>
+                            <constraint firstItem="i29-iE-AWs" firstAttribute="centerY" secondItem="Jw9-YO-4eW" secondAttribute="centerY" id="hnz-Ff-atE"/>
+                            <constraint firstItem="i29-iE-AWs" firstAttribute="leading" secondItem="Cc1-Jb-Gjo" secondAttribute="leading" constant="10" id="mhQ-Dx-dQI"/>
+                            <constraint firstItem="woK-5U-wUX" firstAttribute="leading" secondItem="Jw9-YO-4eW" secondAttribute="leading" constant="10" id="qWV-Ni-g5s"/>
+                            <constraint firstItem="Cc1-Jb-Gjo" firstAttribute="trailing" secondItem="i29-iE-AWs" secondAttribute="trailing" constant="10" id="rsV-1C-5i3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Red Screen" id="R8S-LA-ZgO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WqP-0u-Oes" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639.1304347826087" y="65.625"/>
+        </scene>
+        <!--Blue Screen-->
+        <scene sceneID="KgJ-15-2ky">
+            <objects>
+                <viewController storyboardIdentifier="BlueVC" id="XmX-6U-px2" customClass="BlueVC" customModule="LocalNotificationTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQG-ew-God">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Blue Screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SS-JV-4ca">
+                                <rect key="frame" x="10" y="431.5" width="394" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bU1-ZL-spF"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="4SS-JV-4ca" firstAttribute="centerY" secondItem="bQG-ew-God" secondAttribute="centerY" id="0kQ-GL-zek"/>
+                            <constraint firstItem="4SS-JV-4ca" firstAttribute="leading" secondItem="bU1-ZL-spF" secondAttribute="leading" constant="10" id="b5b-eI-dKW"/>
+                            <constraint firstItem="bU1-ZL-spF" firstAttribute="trailing" secondItem="4SS-JV-4ca" secondAttribute="trailing" constant="10" id="wLn-WQ-CvX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blue Screen" id="qQR-1o-ydB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBl-df-cy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2363.768115942029" y="65.625"/>
+        </scene>
+        <!--Green Screen-->
+        <scene sceneID="yTw-eW-qXt">
+            <objects>
+                <viewController storyboardIdentifier="GreenVC" id="2xp-dx-pN5" customClass="GreenVC" customModule="LocalNotificationTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1jC-sM-WBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Green Screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYT-FB-Ift">
+                                <rect key="frame" x="10" y="431.5" width="394" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zXo-Ra-WC4"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="zXo-Ra-WC4" firstAttribute="trailing" secondItem="PYT-FB-Ift" secondAttribute="trailing" constant="10" id="0r0-5B-IgX"/>
+                            <constraint firstItem="PYT-FB-Ift" firstAttribute="leading" secondItem="zXo-Ra-WC4" secondAttribute="leading" constant="10" id="fVm-lC-PDa"/>
+                            <constraint firstItem="PYT-FB-Ift" firstAttribute="centerY" secondItem="1jC-sM-WBJ" secondAttribute="centerY" id="vIF-ee-TaJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Green Screen" id="bqp-hq-K8t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmi-Es-jtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3118.840579710145" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z58-v4-5Qd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qiD-bA-1IY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="41W-ET-EqS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dXc-fg-5Cf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2j-vF-wNm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33.333333333333336" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

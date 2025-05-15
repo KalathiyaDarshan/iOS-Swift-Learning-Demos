@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HorizontalCell" id="gTV-IL-0wX" customClass="HorizontalCell" customModule="ShopingCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xvy-2B-SF0">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="113"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-bf-928">
+                                <rect key="frame" x="5" y="10" width="128" height="93"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IPhone" translatesAutoresizingMaskIntoConstraints="NO" id="qma-pw-iOt">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="93"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qma-pw-iOt" firstAttribute="top" secondItem="pQC-bf-928" secondAttribute="top" id="9hA-Sw-Hlv"/>
+                                    <constraint firstAttribute="bottom" secondItem="qma-pw-iOt" secondAttribute="bottom" id="O8J-co-NVN"/>
+                                    <constraint firstAttribute="trailing" secondItem="qma-pw-iOt" secondAttribute="trailing" id="ToD-va-bnA"/>
+                                    <constraint firstItem="qma-pw-iOt" firstAttribute="leading" secondItem="pQC-bf-928" secondAttribute="leading" id="jXR-2t-8qy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pQC-bf-928" firstAttribute="leading" secondItem="Xvy-2B-SF0" secondAttribute="leading" constant="5" id="HcF-3b-NR2"/>
+                            <constraint firstAttribute="bottom" secondItem="pQC-bf-928" secondAttribute="bottom" constant="10" id="HgR-ve-8J0"/>
+                            <constraint firstAttribute="trailing" secondItem="pQC-bf-928" secondAttribute="trailing" constant="5" id="cpC-B9-Akc"/>
+                            <constraint firstItem="pQC-bf-928" firstAttribute="top" secondItem="Xvy-2B-SF0" secondAttribute="top" constant="10" id="gNg-zU-sjh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Xvy-2B-SF0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="C96-ak-cvZ"/>
+                <constraint firstItem="Xvy-2B-SF0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hY6-N1-vbk"/>
+                <constraint firstAttribute="trailing" secondItem="Xvy-2B-SF0" secondAttribute="trailing" id="hxp-9l-bTX"/>
+                <constraint firstAttribute="bottom" secondItem="Xvy-2B-SF0" secondAttribute="bottom" id="jSX-rQ-kIs"/>
+            </constraints>
+            <size key="customSize" width="138" height="113"/>
+            <connections>
+                <outlet property="productImage" destination="qma-pw-iOt" id="oXx-bI-mOB"/>
+            </connections>
+            <point key="canvasLocation" x="204.34782608695653" y="101.45089285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="IPhone" width="3000" height="2000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
