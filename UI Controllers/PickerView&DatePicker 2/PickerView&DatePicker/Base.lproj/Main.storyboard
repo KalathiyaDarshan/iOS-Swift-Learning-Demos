@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Cx-AU-K9l">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PickerView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView_DatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0E-QY-OPF" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-th-ruu">
+                                        <rect key="frame" x="10" y="232.66666666666669" width="373" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="wVK-g1-JcB"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstItem="Y16-th-ruu" firstAttribute="leading" secondItem="C0E-QY-OPF" secondAttribute="leading" constant="10" id="1si-ZX-aqv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y16-th-ruu" secondAttribute="trailing" constant="10" id="nuP-kG-lFu"/>
+                                    <constraint firstItem="Y16-th-ruu" firstAttribute="centerY" secondItem="C0E-QY-OPF" secondAttribute="centerY" id="sc9-0e-KOU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C0E-QY-OPF" secondAttribute="bottom" id="7bn-PX-6DP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C0E-QY-OPF" secondAttribute="trailing" id="HQ6-w7-JQ9"/>
+                            <constraint firstItem="C0E-QY-OPF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Isk-sR-WOa"/>
+                            <constraint firstItem="C0E-QY-OPF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UT9-De-UpA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PickerView" id="oO0-vF-AOk">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="No6-f6-Mar">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1tN-DZ-Zx4">
+                                <rect key="frame" x="229" y="5" width="148" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DatePicker View"/>
+                                <connections>
+                                    <segue destination="DZZ-Lx-SRq" kind="show" id="fup-E9-lDU"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pickerView" destination="Y16-th-ruu" id="zL0-JN-RoY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.38167938931292" y="3.5211267605633805"/>
+        </scene>
+        <!--DatePicker -->
+        <scene sceneID="iI6-oo-Kjy">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerVC" id="DZZ-Lx-SRq" customClass="DatePickerVC" customModule="PickerView_DatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jkS-X4-NrX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOa-Jn-6It" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jcR-cu-ZnE">
+                                        <rect key="frame" x="10" y="340.33333333333331" width="373" height="34.333333333333314"/>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstItem="jcR-cu-ZnE" firstAttribute="centerX" secondItem="JOa-Jn-6It" secondAttribute="centerX" id="1Jh-xU-8xy"/>
+                                    <constraint firstItem="jcR-cu-ZnE" firstAttribute="centerY" secondItem="JOa-Jn-6It" secondAttribute="centerY" id="CP3-go-nSr"/>
+                                    <constraint firstItem="jcR-cu-ZnE" firstAttribute="leading" secondItem="JOa-Jn-6It" secondAttribute="leading" constant="10" id="nP4-cW-aNd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2NW-Q9-Ied"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2NW-Q9-Ied" firstAttribute="bottom" secondItem="JOa-Jn-6It" secondAttribute="bottom" id="Jvu-QZ-Whk"/>
+                            <constraint firstItem="JOa-Jn-6It" firstAttribute="top" secondItem="2NW-Q9-Ied" secondAttribute="top" id="MPN-gA-Iy5"/>
+                            <constraint firstItem="2NW-Q9-Ied" firstAttribute="trailing" secondItem="JOa-Jn-6It" secondAttribute="trailing" id="VMI-tC-XNB"/>
+                            <constraint firstItem="JOa-Jn-6It" firstAttribute="leading" secondItem="2NW-Q9-Ied" secondAttribute="leading" id="l9t-hv-YTR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DatePicker " id="lEl-hu-31q"/>
+                    <connections>
+                        <outlet property="datePicker" destination="jcR-cu-ZnE" id="qFf-Dq-xl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0V0-II-7E8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Wa-NL-Sqy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Cx-AU-K9l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aiL-eX-OaT">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1F0-da-XHv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eln-ZH-R7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.664122137404579" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

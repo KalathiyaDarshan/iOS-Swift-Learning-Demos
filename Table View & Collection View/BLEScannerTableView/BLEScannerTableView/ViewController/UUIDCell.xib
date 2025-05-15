@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UUIDCell" rowHeight="167" id="KGk-i7-Jjw" customClass="UUIDCell" customModule="BLEScannerTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpx-eb-qqt" userLabel="Main View">
+                        <rect key="frame" x="0.0" y="0.0" width="367" height="70"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter UUID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5c-Z2-dWe">
+                                <rect key="frame" x="10" y="10" width="227" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sk9-u7-QYI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGy-Ge-a3S">
+                                <rect key="frame" x="252" y="18.000000000000004" width="100" height="34.333333333333343"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="R0G-zq-NaZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="onBtnSaveClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZCA-bg-8ru"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="q5c-Z2-dWe" secondAttribute="bottom" constant="10" id="4FR-vj-iwt"/>
+                            <constraint firstAttribute="trailing" secondItem="mGy-Ge-a3S" secondAttribute="trailing" constant="15" id="6AV-3x-hiF"/>
+                            <constraint firstItem="mGy-Ge-a3S" firstAttribute="leading" secondItem="q5c-Z2-dWe" secondAttribute="trailing" constant="15" id="PQO-n9-YZp"/>
+                            <constraint firstItem="q5c-Z2-dWe" firstAttribute="leading" secondItem="Jpx-eb-qqt" secondAttribute="leading" constant="10" id="U32-PE-Ngk"/>
+                            <constraint firstItem="mGy-Ge-a3S" firstAttribute="centerY" secondItem="q5c-Z2-dWe" secondAttribute="centerY" id="cQ5-Ds-Oyu"/>
+                            <constraint firstItem="q5c-Z2-dWe" firstAttribute="top" secondItem="Jpx-eb-qqt" secondAttribute="top" constant="10" id="eSj-vG-jTH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                <constraints>
+                    <constraint firstItem="Jpx-eb-qqt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ynq-j9-oFZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Jpx-eb-qqt" secondAttribute="trailing" id="klz-qQ-pib"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jpx-eb-qqt" secondAttribute="bottom" id="o9O-9w-Gvh"/>
+                    <constraint firstItem="Jpx-eb-qqt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xtz-aD-cob"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSave" destination="mGy-Ge-a3S" id="21J-5j-6aG"/>
+                <outlet property="txtUUID" destination="q5c-Z2-dWe" id="avH-YB-qeK"/>
+            </connections>
+            <point key="canvasLocation" x="153.43511450381678" y="54.577464788732399"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

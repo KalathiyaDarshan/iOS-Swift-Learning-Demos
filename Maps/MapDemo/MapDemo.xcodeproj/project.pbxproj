@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D6420BE2D4758FF0085F459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6420BD2D4758FF0085F459 /* AppDelegate.swift */; };
+		0D6420C02D4758FF0085F459 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6420BF2D4758FF0085F459 /* SceneDelegate.swift */; };
+		0D6420C22D4758FF0085F459 /* MapListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6420C12D4758FF0085F459 /* MapListVC.swift */; };
+		0D6420C52D4758FF0085F459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6420C32D4758FF0085F459 /* Main.storyboard */; };
+		0D6420C72D4759000085F459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6420C62D4759000085F459 /* Assets.xcassets */; };
+		0D6420CA2D4759000085F459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6420C82D4759000085F459 /* LaunchScreen.storyboard */; };
+		0D6420D32D475CD80085F459 /* MapTpes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6420D22D475CD80085F459 /* MapTpes.swift */; };
+		0D6420DB2D475EF70085F459 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6420D92D475EF70085F459 /* MapCell.swift */; };
+		0D6420DC2D475EF70085F459 /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D6420DA2D475EF70085F459 /* MapCell.xib */; };
+		0D6420DE2D4766920085F459 /* MapHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6420DD2D4766920085F459 /* MapHeader.swift */; };
+		0D6420E02D4766A60085F459 /* MapHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D6420DF2D4766A60085F459 /* MapHeader.xib */; };
+		0D6420E22D476EC00085F459 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6420E12D476EC00085F459 /* MapVC.swift */; };
+		0D7A57532D51D33F00DEF99E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A57522D51D33F00DEF99E /* LocationManager.swift */; };
+		0D9D98EA2D534FAA00F88843 /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D9D98E92D534FAA00F88843 /* map.html */; };
+		0DC5FEC82D50C70000729009 /* TomTomSDKBindingFrameworkHTTPInternal in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEC72D50C70000729009 /* TomTomSDKBindingFrameworkHTTPInternal */; };
+		0DC5FECA2D50C70000729009 /* TomTomSDKBindingFrameworkLoggingInternal in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEC92D50C70000729009 /* TomTomSDKBindingFrameworkLoggingInternal */; };
+		0DC5FECC2D50C70000729009 /* TomTomSDKBindingMapDisplayEngineInternal in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FECB2D50C70000729009 /* TomTomSDKBindingMapDisplayEngineInternal */; };
+		0DC5FECE2D50C70000729009 /* TomTomSDKBindingTrafficTileGeneratorInternal in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FECD2D50C70000729009 /* TomTomSDKBindingTrafficTileGeneratorInternal */; };
+		0DC5FED02D50C70000729009 /* TomTomSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FECF2D50C70000729009 /* TomTomSDKCommon */; };
+		0DC5FED22D50C70000729009 /* TomTomSDKCommonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FED12D50C70000729009 /* TomTomSDKCommonUI */; };
+		0DC5FED42D50C70000729009 /* TomTomSDKDynamicData in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FED32D50C70000729009 /* TomTomSDKDynamicData */; };
+		0DC5FED62D50C70000729009 /* TomTomSDKDynamicDataOnline in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FED52D50C70000729009 /* TomTomSDKDynamicDataOnline */; };
+		0DC5FED82D50C70000729009 /* TomTomSDKFeatureToggle in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FED72D50C70000729009 /* TomTomSDKFeatureToggle */; };
+		0DC5FEDA2D50C70000729009 /* TomTomSDKLocationProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FED92D50C70000729009 /* TomTomSDKLocationProvider */; };
+		0DC5FEDC2D50C70000729009 /* TomTomSDKMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEDB2D50C70000729009 /* TomTomSDKMQTT */; };
+		0DC5FEDE2D50C70000729009 /* TomTomSDKMapDisplay in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEDD2D50C70000729009 /* TomTomSDKMapDisplay */; };
+		0DC5FEE02D50C70000729009 /* TomTomSDKNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEDF2D50C70000729009 /* TomTomSDKNetworking */; };
+		0DC5FEE22D50C70000729009 /* TomTomSDKPOIVisualization in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEE12D50C70000729009 /* TomTomSDKPOIVisualization */; };
+		0DC5FEE42D50C70000729009 /* TomTomSDKPersonalData in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEE32D50C70000729009 /* TomTomSDKPersonalData */; };
+		0DC5FEE62D50C70000729009 /* TomTomSDKPersonalDataDefault in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEE52D50C70000729009 /* TomTomSDKPersonalDataDefault */; };
+		0DC5FEE82D50C70000729009 /* TomTomSDKRangeCalculator in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEE72D50C70000729009 /* TomTomSDKRangeCalculator */; };
+		0DC5FEEA2D50C70000729009 /* TomTomSDKRangeVisualization in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEE92D50C70000729009 /* TomTomSDKRangeVisualization */; };
+		0DC5FEEC2D50C70000729009 /* TomTomSDKReverseGeocoder in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEEB2D50C70000729009 /* TomTomSDKReverseGeocoder */; };
+		0DC5FEEE2D50C70000729009 /* TomTomSDKReverseGeocoderOnline in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEED2D50C70000729009 /* TomTomSDKReverseGeocoderOnline */; };
+		0DC5FEF02D50C70000729009 /* TomTomSDKRoute in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEEF2D50C70000729009 /* TomTomSDKRoute */; };
+		0DC5FEF22D50C70000729009 /* TomTomSDKRoutePlanner in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEF12D50C70000729009 /* TomTomSDKRoutePlanner */; };
+		0DC5FEF42D50C70000729009 /* TomTomSDKRoutePlannerOnline in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEF32D50C70000729009 /* TomTomSDKRoutePlannerOnline */; };
+		0DC5FEF62D50C70000729009 /* TomTomSDKRoutingCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEF52D50C70000729009 /* TomTomSDKRoutingCommon */; };
+		0DC5FEF82D50C70000729009 /* TomTomSDKRoutingVisualization in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEF72D50C70000729009 /* TomTomSDKRoutingVisualization */; };
+		0DC5FEFA2D50C70000729009 /* TomTomSDKSearch in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEF92D50C70000729009 /* TomTomSDKSearch */; };
+		0DC5FEFC2D50C70000729009 /* TomTomSDKSearchCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEFB2D50C70000729009 /* TomTomSDKSearchCommon */; };
+		0DC5FEFE2D50C70000729009 /* TomTomSDKSearchOnline in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEFD2D50C70000729009 /* TomTomSDKSearchOnline */; };
+		0DC5FF002D50C70000729009 /* TomTomSDKSearchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FEFF2D50C70000729009 /* TomTomSDKSearchUI */; };
+		0DC5FF022D50C70000729009 /* TomTomSDKSearchVisualization in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FF012D50C70000729009 /* TomTomSDKSearchVisualization */; };
+		0DC5FF042D50C70000729009 /* TomTomSDKTelemetry in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FF032D50C70000729009 /* TomTomSDKTelemetry */; };
+		0DC5FF062D50C70000729009 /* TomTomSDKTraffic in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FF052D50C70000729009 /* TomTomSDKTraffic */; };
+		0DC5FF082D50C70000729009 /* TomTomSDKTrafficDataProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FF072D50C70000729009 /* TomTomSDKTrafficDataProvider */; };
+		0DC5FF0A2D50C70000729009 /* TomTomSDKVehicle in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC5FF092D50C70000729009 /* TomTomSDKVehicle */; };
+		BB3561375EE5468E2108A04C /* Pods_MapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189222E298F6F95FEC6D8DAB /* Pods_MapDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D779B902D521CE6006EE027 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D6420BA2D4758FF0085F459 /* MapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6420BD2D4758FF0085F459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D6420BF2D4758FF0085F459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0D6420C12D4758FF0085F459 /* MapListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListVC.swift; sourceTree = "<group>"; };
+		0D6420C42D4758FF0085F459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D6420C62D4759000085F459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D6420C92D4759000085F459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D6420CB2D4759000085F459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6420D22D475CD80085F459 /* MapTpes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTpes.swift; sourceTree = "<group>"; };
+		0D6420D92D475EF70085F459 /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		0D6420DA2D475EF70085F459 /* MapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		0D6420DD2D4766920085F459 /* MapHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeader.swift; sourceTree = "<group>"; };
+		0D6420DF2D4766A60085F459 /* MapHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeader.xib; sourceTree = "<group>"; };
+		0D6420E12D476EC00085F459 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		0D7A57522D51D33F00DEF99E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0D9D98E92D534FAA00F88843 /* map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = map.html; sourceTree = "<group>"; };
+		189222E298F6F95FEC6D8DAB /* Pods_MapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA9D1CF08A9B3F448273C28 /* Pods-MapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.release.xcconfig"; path = "Target Support Files/Pods-MapDemo/Pods-MapDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7ACEE6DDDC6392049AD51670 /* Pods-MapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.debug.xcconfig"; path = "Target Support Files/Pods-MapDemo/Pods-MapDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D6420B72D4758FF0085F459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC5FECE2D50C70000729009 /* TomTomSDKBindingTrafficTileGeneratorInternal in Frameworks */,
+				0DC5FEF42D50C70000729009 /* TomTomSDKRoutePlannerOnline in Frameworks */,
+				0DC5FEE62D50C70000729009 /* TomTomSDKPersonalDataDefault in Frameworks */,
+				0DC5FED22D50C70000729009 /* TomTomSDKCommonUI in Frameworks */,
+				0DC5FEFE2D50C70000729009 /* TomTomSDKSearchOnline in Frameworks */,
+				0DC5FEFA2D50C70000729009 /* TomTomSDKSearch in Frameworks */,
+				0DC5FECC2D50C70000729009 /* TomTomSDKBindingMapDisplayEngineInternal in Frameworks */,
+				0DC5FF062D50C70000729009 /* TomTomSDKTraffic in Frameworks */,
+				0DC5FED02D50C70000729009 /* TomTomSDKCommon in Frameworks */,
+				0DC5FF0A2D50C70000729009 /* TomTomSDKVehicle in Frameworks */,
+				0DC5FEEE2D50C70000729009 /* TomTomSDKReverseGeocoderOnline in Frameworks */,
+				0DC5FEDC2D50C70000729009 /* TomTomSDKMQTT in Frameworks */,
+				0DC5FEFC2D50C70000729009 /* TomTomSDKSearchCommon in Frameworks */,
+				0DC5FEF22D50C70000729009 /* TomTomSDKRoutePlanner in Frameworks */,
+				0DC5FED42D50C70000729009 /* TomTomSDKDynamicData in Frameworks */,
+				0DC5FEE02D50C70000729009 /* TomTomSDKNetworking in Frameworks */,
+				0DC5FEE82D50C70000729009 /* TomTomSDKRangeCalculator in Frameworks */,
+				0DC5FEF82D50C70000729009 /* TomTomSDKRoutingVisualization in Frameworks */,
+				0DC5FEF02D50C70000729009 /* TomTomSDKRoute in Frameworks */,
+				0DC5FF082D50C70000729009 /* TomTomSDKTrafficDataProvider in Frameworks */,
+				0DC5FF002D50C70000729009 /* TomTomSDKSearchUI in Frameworks */,
+				0DC5FF042D50C70000729009 /* TomTomSDKTelemetry in Frameworks */,
+				0DC5FEE22D50C70000729009 /* TomTomSDKPOIVisualization in Frameworks */,
+				0DC5FEE42D50C70000729009 /* TomTomSDKPersonalData in Frameworks */,
+				0DC5FEF62D50C70000729009 /* TomTomSDKRoutingCommon in Frameworks */,
+				0DC5FF022D50C70000729009 /* TomTomSDKSearchVisualization in Frameworks */,
+				0DC5FEEA2D50C70000729009 /* TomTomSDKRangeVisualization in Frameworks */,
+				0DC5FEEC2D50C70000729009 /* TomTomSDKReverseGeocoder in Frameworks */,
+				0DC5FED62D50C70000729009 /* TomTomSDKDynamicDataOnline in Frameworks */,
+				0DC5FEDE2D50C70000729009 /* TomTomSDKMapDisplay in Frameworks */,
+				0DC5FEDA2D50C70000729009 /* TomTomSDKLocationProvider in Frameworks */,
+				0DC5FED82D50C70000729009 /* TomTomSDKFeatureToggle in Frameworks */,
+				0DC5FECA2D50C70000729009 /* TomTomSDKBindingFrameworkLoggingInternal in Frameworks */,
+				0DC5FEC82D50C70000729009 /* TomTomSDKBindingFrameworkHTTPInternal in Frameworks */,
+				BB3561375EE5468E2108A04C /* Pods_MapDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6420B12D4758FF0085F459 = {
+			isa = PBXGroup;
+			children = (
+				0D6420BC2D4758FF0085F459 /* MapDemo */,
+				0D6420BB2D4758FF0085F459 /* Products */,
+				BDB05901CD1EB4C8D71CE9E4 /* Pods */,
+				0D779AF22D5215B9006EE027 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D6420BB2D4758FF0085F459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D6420BA2D4758FF0085F459 /* MapDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D6420BC2D4758FF0085F459 /* MapDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0D6420D42D475E310085F459 /* AppDelegate */,
+				0D6420D62D475E5B0085F459 /* Enum */,
+				0D6420D52D475E480085F459 /* ViewController */,
+				0D6420D72D475E6E0085F459 /* Storybord */,
+				0D6420C62D4759000085F459 /* Assets.xcassets */,
+				0D6420CB2D4759000085F459 /* Info.plist */,
+				0D9D98E92D534FAA00F88843 /* map.html */,
+				0D7A57522D51D33F00DEF99E /* LocationManager.swift */,
+			);
+			path = MapDemo;
+			sourceTree = "<group>";
+		};
+		0D6420D42D475E310085F459 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0D6420BD2D4758FF0085F459 /* AppDelegate.swift */,
+				0D6420BF2D4758FF0085F459 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0D6420D52D475E480085F459 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0D6420D82D475ED20085F459 /* TableCell */,
+				0D6420C12D4758FF0085F459 /* MapListVC.swift */,
+				0D6420E12D476EC00085F459 /* MapVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0D6420D62D475E5B0085F459 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				0D6420D22D475CD80085F459 /* MapTpes.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		0D6420D72D475E6E0085F459 /* Storybord */ = {
+			isa = PBXGroup;
+			children = (
+				0D6420C32D4758FF0085F459 /* Main.storyboard */,
+				0D6420C82D4759000085F459 /* LaunchScreen.storyboard */,
+			);
+			path = Storybord;
+			sourceTree = "<group>";
+		};
+		0D6420D82D475ED20085F459 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0D6420D92D475EF70085F459 /* MapCell.swift */,
+				0D6420DA2D475EF70085F459 /* MapCell.xib */,
+				0D6420DD2D4766920085F459 /* MapHeader.swift */,
+				0D6420DF2D4766A60085F459 /* MapHeader.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		0D779AF22D5215B9006EE027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189222E298F6F95FEC6D8DAB /* Pods_MapDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDB05901CD1EB4C8D71CE9E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEE6DDDC6392049AD51670 /* Pods-MapDemo.debug.xcconfig */,
+				4FA9D1CF08A9B3F448273C28 /* Pods-MapDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D6420B92D4758FF0085F459 /* MapDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6420CE2D4759000085F459 /* Build configuration list for PBXNativeTarget "MapDemo" */;
+			buildPhases = (
+				B91853A94D183E59DFD40C15 /* [CP] Check Pods Manifest.lock */,
+				0D6420B62D4758FF0085F459 /* Sources */,
+				0D6420B72D4758FF0085F459 /* Frameworks */,
+				0D6420B82D4758FF0085F459 /* Resources */,
+				DE4A43913332DDFAE81E55D3 /* [CP] Embed Pods Frameworks */,
+				6486A318271BF0657D9C9CA1 /* [CP] Copy Pods Resources */,
+				0D779B902D521CE6006EE027 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapDemo;
+			packageProductDependencies = (
+				0DC5FEC72D50C70000729009 /* TomTomSDKBindingFrameworkHTTPInternal */,
+				0DC5FEC92D50C70000729009 /* TomTomSDKBindingFrameworkLoggingInternal */,
+				0DC5FECB2D50C70000729009 /* TomTomSDKBindingMapDisplayEngineInternal */,
+				0DC5FECD2D50C70000729009 /* TomTomSDKBindingTrafficTileGeneratorInternal */,
+				0DC5FECF2D50C70000729009 /* TomTomSDKCommon */,
+				0DC5FED12D50C70000729009 /* TomTomSDKCommonUI */,
+				0DC5FED32D50C70000729009 /* TomTomSDKDynamicData */,
+				0DC5FED52D50C70000729009 /* TomTomSDKDynamicDataOnline */,
+				0DC5FED72D50C70000729009 /* TomTomSDKFeatureToggle */,
+				0DC5FED92D50C70000729009 /* TomTomSDKLocationProvider */,
+				0DC5FEDB2D50C70000729009 /* TomTomSDKMQTT */,
+				0DC5FEDD2D50C70000729009 /* TomTomSDKMapDisplay */,
+				0DC5FEDF2D50C70000729009 /* TomTomSDKNetworking */,
+				0DC5FEE12D50C70000729009 /* TomTomSDKPOIVisualization */,
+				0DC5FEE32D50C70000729009 /* TomTomSDKPersonalData */,
+				0DC5FEE52D50C70000729009 /* TomTomSDKPersonalDataDefault */,
+				0DC5FEE72D50C70000729009 /* TomTomSDKRangeCalculator */,
+				0DC5FEE92D50C70000729009 /* TomTomSDKRangeVisualization */,
+				0DC5FEEB2D50C70000729009 /* TomTomSDKReverseGeocoder */,
+				0DC5FEED2D50C70000729009 /* TomTomSDKReverseGeocoderOnline */,
+				0DC5FEEF2D50C70000729009 /* TomTomSDKRoute */,
+				0DC5FEF12D50C70000729009 /* TomTomSDKRoutePlanner */,
+				0DC5FEF32D50C70000729009 /* TomTomSDKRoutePlannerOnline */,
+				0DC5FEF52D50C70000729009 /* TomTomSDKRoutingCommon */,
+				0DC5FEF72D50C70000729009 /* TomTomSDKRoutingVisualization */,
+				0DC5FEF92D50C70000729009 /* TomTomSDKSearch */,
+				0DC5FEFB2D50C70000729009 /* TomTomSDKSearchCommon */,
+				0DC5FEFD2D50C70000729009 /* TomTomSDKSearchOnline */,
+				0DC5FEFF2D50C70000729009 /* TomTomSDKSearchUI */,
+				0DC5FF012D50C70000729009 /* TomTomSDKSearchVisualization */,
+				0DC5FF032D50C70000729009 /* TomTomSDKTelemetry */,
+				0DC5FF052D50C70000729009 /* TomTomSDKTraffic */,
+				0DC5FF072D50C70000729009 /* TomTomSDKTrafficDataProvider */,
+				0DC5FF092D50C70000729009 /* TomTomSDKVehicle */,
+			);
+			productName = MapDemo;
+			productReference = 0D6420BA2D4758FF0085F459 /* MapDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D6420B22D4758FF0085F459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0D6420B92D4758FF0085F459 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 0D6420B52D4758FF0085F459 /* Build configuration list for PBXProject "MapDemo" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D6420B12D4758FF0085F459;
+			packageReferences = (
+				0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */,
+			);
+			productRefGroup = 0D6420BB2D4758FF0085F459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D6420B92D4758FF0085F459 /* MapDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D6420B82D4758FF0085F459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6420CA2D4759000085F459 /* LaunchScreen.storyboard in Resources */,
+				0D6420C72D4759000085F459 /* Assets.xcassets in Resources */,
+				0D6420DC2D475EF70085F459 /* MapCell.xib in Resources */,
+				0D6420E02D4766A60085F459 /* MapHeader.xib in Resources */,
+				0D6420C52D4758FF0085F459 /* Main.storyboard in Resources */,
+				0D9D98EA2D534FAA00F88843 /* map.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6486A318271BF0657D9C9CA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapDemo/Pods-MapDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapDemo/Pods-MapDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapDemo/Pods-MapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B91853A94D183E59DFD40C15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE4A43913332DDFAE81E55D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapDemo/Pods-MapDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapDemo/Pods-MapDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapDemo/Pods-MapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D6420B62D4758FF0085F459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6420C22D4758FF0085F459 /* MapListVC.swift in Sources */,
+				0D6420D32D475CD80085F459 /* MapTpes.swift in Sources */,
+				0D6420BE2D4758FF0085F459 /* AppDelegate.swift in Sources */,
+				0D6420C02D4758FF0085F459 /* SceneDelegate.swift in Sources */,
+				0D7A57532D51D33F00DEF99E /* LocationManager.swift in Sources */,
+				0D6420E22D476EC00085F459 /* MapVC.swift in Sources */,
+				0D6420DB2D475EF70085F459 /* MapCell.swift in Sources */,
+				0D6420DE2D4766920085F459 /* MapHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D6420C32D4758FF0085F459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D6420C42D4758FF0085F459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D6420C82D4759000085F459 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D6420C92D4759000085F459 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D6420CC2D4759000085F459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D6420CD2D4759000085F459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D6420CF2D4759000085F459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACEE6DDDC6392049AD51670 /* Pods-MapDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7J8FUEGEL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bluepixel.MapDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D6420D02D4759000085F459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA9D1CF08A9B3F448273C28 /* Pods-MapDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7J8FUEGEL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bluepixel.MapDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D6420B52D4758FF0085F459 /* Build configuration list for PBXProject "MapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6420CC2D4759000085F459 /* Debug */,
+				0D6420CD2D4759000085F459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D6420CE2D4759000085F459 /* Build configuration list for PBXNativeTarget "MapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6420CF2D4759000085F459 /* Debug */,
+				0D6420D02D4759000085F459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomtom-international/tomtom-sdk-spm-core";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0DC5FEC72D50C70000729009 /* TomTomSDKBindingFrameworkHTTPInternal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKBindingFrameworkHTTPInternal;
+		};
+		0DC5FEC92D50C70000729009 /* TomTomSDKBindingFrameworkLoggingInternal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKBindingFrameworkLoggingInternal;
+		};
+		0DC5FECB2D50C70000729009 /* TomTomSDKBindingMapDisplayEngineInternal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKBindingMapDisplayEngineInternal;
+		};
+		0DC5FECD2D50C70000729009 /* TomTomSDKBindingTrafficTileGeneratorInternal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKBindingTrafficTileGeneratorInternal;
+		};
+		0DC5FECF2D50C70000729009 /* TomTomSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKCommon;
+		};
+		0DC5FED12D50C70000729009 /* TomTomSDKCommonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKCommonUI;
+		};
+		0DC5FED32D50C70000729009 /* TomTomSDKDynamicData */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKDynamicData;
+		};
+		0DC5FED52D50C70000729009 /* TomTomSDKDynamicDataOnline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKDynamicDataOnline;
+		};
+		0DC5FED72D50C70000729009 /* TomTomSDKFeatureToggle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKFeatureToggle;
+		};
+		0DC5FED92D50C70000729009 /* TomTomSDKLocationProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKLocationProvider;
+		};
+		0DC5FEDB2D50C70000729009 /* TomTomSDKMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKMQTT;
+		};
+		0DC5FEDD2D50C70000729009 /* TomTomSDKMapDisplay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKMapDisplay;
+		};
+		0DC5FEDF2D50C70000729009 /* TomTomSDKNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKNetworking;
+		};
+		0DC5FEE12D50C70000729009 /* TomTomSDKPOIVisualization */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKPOIVisualization;
+		};
+		0DC5FEE32D50C70000729009 /* TomTomSDKPersonalData */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKPersonalData;
+		};
+		0DC5FEE52D50C70000729009 /* TomTomSDKPersonalDataDefault */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKPersonalDataDefault;
+		};
+		0DC5FEE72D50C70000729009 /* TomTomSDKRangeCalculator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKRangeCalculator;
+		};
+		0DC5FEE92D50C70000729009 /* TomTomSDKRangeVisualization */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKRangeVisualization;
+		};
+		0DC5FEEB2D50C70000729009 /* TomTomSDKReverseGeocoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKReverseGeocoder;
+		};
+		0DC5FEED2D50C70000729009 /* TomTomSDKReverseGeocoderOnline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKReverseGeocoderOnline;
+		};
+		0DC5FEEF2D50C70000729009 /* TomTomSDKRoute */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKRoute;
+		};
+		0DC5FEF12D50C70000729009 /* TomTomSDKRoutePlanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKRoutePlanner;
+		};
+		0DC5FEF32D50C70000729009 /* TomTomSDKRoutePlannerOnline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKRoutePlannerOnline;
+		};
+		0DC5FEF52D50C70000729009 /* TomTomSDKRoutingCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKRoutingCommon;
+		};
+		0DC5FEF72D50C70000729009 /* TomTomSDKRoutingVisualization */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKRoutingVisualization;
+		};
+		0DC5FEF92D50C70000729009 /* TomTomSDKSearch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKSearch;
+		};
+		0DC5FEFB2D50C70000729009 /* TomTomSDKSearchCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKSearchCommon;
+		};
+		0DC5FEFD2D50C70000729009 /* TomTomSDKSearchOnline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKSearchOnline;
+		};
+		0DC5FEFF2D50C70000729009 /* TomTomSDKSearchUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKSearchUI;
+		};
+		0DC5FF012D50C70000729009 /* TomTomSDKSearchVisualization */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKSearchVisualization;
+		};
+		0DC5FF032D50C70000729009 /* TomTomSDKTelemetry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKTelemetry;
+		};
+		0DC5FF052D50C70000729009 /* TomTomSDKTraffic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKTraffic;
+		};
+		0DC5FF072D50C70000729009 /* TomTomSDKTrafficDataProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKTrafficDataProvider;
+		};
+		0DC5FF092D50C70000729009 /* TomTomSDKVehicle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC5FEC62D50C70000729009 /* XCRemoteSwiftPackageReference "tomtom-sdk-spm-core" */;
+			productName = TomTomSDKVehicle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0D6420B22D4758FF0085F459 /* Project object */;
+}

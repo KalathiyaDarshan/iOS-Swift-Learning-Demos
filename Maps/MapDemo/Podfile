@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MapDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MapDemo
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+pod 'MapmyIndiaAPIKit'
+pod 'MapmyIndiaMaps'
+pod 'MapmyIndiaDirections'
+pod 'MapboxCommon', '23.11.3'
+pod 'MapboxMaps', '10.19.2'
+end

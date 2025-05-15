@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StepperDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mw3-Re-cdm">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-51-Rkh">
+                                        <rect key="frame" x="189" y="70" width="15" height="28.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WKv-Fj-Vb2">
+                                        <rect key="frame" x="149.66666666666666" y="118.66666666666666" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="awH-kt-bit"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WKv-Fj-Vb2" firstAttribute="top" secondItem="eWY-51-Rkh" secondAttribute="bottom" constant="20" id="2ka-DY-8bR"/>
+                                    <constraint firstItem="eWY-51-Rkh" firstAttribute="centerX" secondItem="Mw3-Re-cdm" secondAttribute="centerX" id="C3y-DA-aCg"/>
+                                    <constraint firstItem="WKv-Fj-Vb2" firstAttribute="centerX" secondItem="Mw3-Re-cdm" secondAttribute="centerX" id="VIa-MT-HBK"/>
+                                    <constraint firstItem="eWY-51-Rkh" firstAttribute="top" secondItem="Mw3-Re-cdm" secondAttribute="top" constant="70" id="h64-Po-N8f"/>
+                                    <constraint firstItem="WKv-Fj-Vb2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mw3-Re-cdm" secondAttribute="leading" constant="25" id="nMc-UD-BlV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mw3-Re-cdm" secondAttribute="trailing" id="Hl1-ij-2xe"/>
+                            <constraint firstItem="Mw3-Re-cdm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VM6-uj-cVG"/>
+                            <constraint firstItem="Mw3-Re-cdm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ewc-od-ESa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mw3-Re-cdm" secondAttribute="bottom" id="n9Z-MD-kvd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblNumber" destination="eWY-51-Rkh" id="ZWV-34-Z9q"/>
+                        <outlet property="stepper" destination="WKv-Fj-Vb2" id="05w-yV-iij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

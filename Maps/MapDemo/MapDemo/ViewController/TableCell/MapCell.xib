@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapCell" rowHeight="249" id="KGk-i7-Jjw" customClass="MapCell" customModule="MapDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8r-lw-3bB">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="200"/>
+                        <subviews>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="og3-PP-cXf">
+                                <rect key="frame" x="267" y="155" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2js-K3-uZD"/>
+                                    <constraint firstAttribute="width" secondItem="og3-PP-cXf" secondAttribute="height" multiplier="1:1" id="DzL-uR-bQ6"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_viewfull"/>
+                                <connections>
+                                    <action selector="btnViewClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4yU-Yp-d2Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aes-tq-uD3">
+                                <rect key="frame" x="257" y="5" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="eIC-KD-aAZ"/>
+                                    <constraint firstAttribute="width" secondItem="aes-tq-uD3" secondAttribute="height" multiplier="1:1" id="exz-4d-XNT"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="ic_mylocation"/>
+                                <connections>
+                                    <action selector="btnMyLocationClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="54e-jJ-nQh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="og3-PP-cXf" secondAttribute="bottom" constant="5" id="79n-UR-WC0"/>
+                            <constraint firstAttribute="trailing" secondItem="aes-tq-uD3" secondAttribute="trailing" constant="10" id="Kab-ro-TRA"/>
+                            <constraint firstAttribute="height" constant="200" id="Vyd-9J-M90"/>
+                            <constraint firstItem="aes-tq-uD3" firstAttribute="top" secondItem="g8r-lw-3bB" secondAttribute="top" constant="5" id="oYm-wF-N1c"/>
+                            <constraint firstAttribute="trailing" secondItem="og3-PP-cXf" secondAttribute="trailing" constant="15" id="qOj-MW-Dcz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="g8r-lw-3bB" secondAttribute="trailing" id="9zJ-kW-gl7"/>
+                    <constraint firstItem="g8r-lw-3bB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bTC-Fk-lN1"/>
+                    <constraint firstItem="g8r-lw-3bB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eZl-RI-cld"/>
+                    <constraint firstAttribute="bottom" secondItem="g8r-lw-3bB" secondAttribute="bottom" id="ex2-hj-HJs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnMyLocation" destination="aes-tq-uD3" id="ads-EB-36g"/>
+                <outlet property="btnViewFullMap" destination="og3-PP-cXf" id="X8u-Yg-cVj"/>
+                <outlet property="mainView" destination="g8r-lw-3bB" id="CYb-oh-nXL"/>
+            </connections>
+            <point key="canvasLocation" x="-4.5801526717557248" y="91.901408450704224"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_mylocation" width="58" height="58"/>
+        <image name="ic_viewfull" width="35" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
