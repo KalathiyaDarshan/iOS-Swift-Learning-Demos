@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIPanGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-8U-OhU">
+                                <rect key="frame" x="20" y="40" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ItC-fL-LKe"/>
+                                    <constraint firstAttribute="width" constant="80" id="Kzj-T8-yog"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash" translatesAutoresizingMaskIntoConstraints="NO" id="ody-H9-cP1">
+                                <rect key="frame" x="275" y="567" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HZk-mo-yuv"/>
+                                    <constraint firstAttribute="width" constant="80" id="obh-Jk-vHr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74510893489999996" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mXi-8U-OhU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="JOD-w5-yf6"/>
+                            <constraint firstItem="mXi-8U-OhU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="T79-lZ-Njp"/>
+                            <constraint firstAttribute="trailing" secondItem="ody-H9-cP1" secondAttribute="trailing" constant="20" id="hkN-Y4-gp3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ody-H9-cP1" secondAttribute="bottom" constant="20" id="yUh-wu-co5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fileImageView" destination="mXi-8U-OhU" id="XN3-DZ-YEh"/>
+                        <outlet property="trashImageView" destination="ody-H9-cP1" id="iNq-sP-Xfx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="file" width="128" height="128"/>
+        <image name="trash" width="128" height="128"/>
+    </resources>
+</document>
