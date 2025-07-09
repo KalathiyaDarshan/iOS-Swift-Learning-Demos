@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LogManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="cR3-zU-ocw">
+                                <rect key="frame" x="25" y="256.66666666666663" width="343" height="338.66666666666663"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Log" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBl-9T-eaI">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="smc-O4-aee"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxZ-gG-6A1">
+                                        <rect key="frame" x="0.0" y="69" width="343" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Log"/>
+                                        <connections>
+                                            <action selector="onBtnAddLog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFZ-o7-E5Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzn-FM-8KJ">
+                                        <rect key="frame" x="0.0" y="128" width="343" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Delete Log File"/>
+                                        <connections>
+                                            <action selector="onBtnDeleteLogFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8a-jV-IGv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdK-I1-4Qc">
+                                        <rect key="frame" x="0.0" y="187" width="343" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Line Befor"/>
+                                        <connections>
+                                            <action selector="onBtnAddLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBU-4D-bfM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfi-Gf-yII">
+                                        <rect key="frame" x="0.0" y="246.00000000000003" width="343" height="34.333333333333343"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Line After"/>
+                                        <connections>
+                                            <action selector="onBtnAddLineAfter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XP6-OG-NTW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWW-8a-ZnJ">
+                                        <rect key="frame" x="0.0" y="304.33333333333331" width="343" height="34.333333333333314"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Line After &amp; Before"/>
+                                        <connections>
+                                            <action selector="onBtnAddLineAfterBefore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgd-A5-cZ0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tzn-FM-8KJ" firstAttribute="height" secondItem="bxZ-gG-6A1" secondAttribute="height" id="L5S-qH-V5e"/>
+                                    <constraint firstItem="gdK-I1-4Qc" firstAttribute="height" secondItem="tzn-FM-8KJ" secondAttribute="height" id="gFZ-u4-mlS"/>
+                                    <constraint firstItem="bxZ-gG-6A1" firstAttribute="height" secondItem="XBl-9T-eaI" secondAttribute="height" multiplier="0.777778" id="iOb-Du-WCm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="cR3-zU-ocw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3dt-uZ-PpV"/>
+                            <constraint firstItem="cR3-zU-ocw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="T3L-NY-XUQ"/>
+                            <constraint firstItem="cR3-zU-ocw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p9F-yD-ObB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddLine" destination="gdK-I1-4Qc" id="FLX-Bn-3Kz"/>
+                        <outlet property="btnAddLineAfter" destination="Jfi-Gf-yII" id="ZBP-SU-EGB"/>
+                        <outlet property="btnAddLog" destination="bxZ-gG-6A1" id="sw0-a2-Oba"/>
+                        <outlet property="btnDeleteLogFile" destination="tzn-FM-8KJ" id="ab8-Sr-98b"/>
+                        <outlet property="txtLog" destination="XBl-9T-eaI" id="yOW-py-5TS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
